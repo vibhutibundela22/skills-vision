@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>{{ topic }} Quiz</h2>
+        <form method="POST">
+            {% for q in questions %}
+                <p>{{ loop.index }}. {{ q.question }}</p>
+                {% for option in q.options %}
+                    <label><input type="radio" name="q{{ q.id }}" value="{{ option }}"> {{ option }}</label><br>
+                {% endfor %}
+            {% endfor %}
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

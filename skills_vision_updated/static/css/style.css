@@ -1,0 +1,41 @@
+# Placeholder for static/css/style.css
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1c1c1c, #383838);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #333;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #555;
+    text-align: left;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
