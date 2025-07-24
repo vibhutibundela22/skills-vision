@@ -1,3 +1,5 @@
-flask
+
+Flask
 gunicorn
-python-dotenv
+SQLAlchemy
+Jinja2
